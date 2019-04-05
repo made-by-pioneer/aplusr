@@ -1,0 +1,62 @@
+baseURL = "http://example.com/"
+description = "Please bear with us. Our website is currently will be live on May 15th."
+languageCode = "en-us"
+theme = "site-theme"
+title = "A+R Valve USA, LLC"
+[[menu.desktop]]
+identifier = "menu-desktop-1"
+name = "Menu Item 1"
+url = "/page-1"
+weight = 1
+[[menu.desktop]]
+identifier = "menu-desktop-2"
+name = "Menu Item 2"
+url = "/page-2"
+weight = 2
+[[menu.desktop]]
+identifier = "menu-desktop-3"
+name = "Menu Item 3"
+url = "/page-3"
+weight = 3
+[[menu.desktop]]
+identifier = "menu-desktop-4"
+name = "Menu Item 4"
+url = "/page-4"
+weight = 4
+[[menu.mobile]]
+identifier = "menu-mobile-1"
+name = "Menu Item 1"
+url = "/page-1"
+weight = 1
+[[menu.mobile]]
+identifier = "menu-mobile-2"
+name = "Menu Item 2"
+url = "/page-2"
+weight = 2
+[[menu.mobile]]
+identifier = "menu-mobile-3"
+name = "Menu Item 3"
+url = "/page-3"
+weight = 3
+[params.Contact_Numbers]
+Phone = "912-489-1377"
+Secondary_phone = "912-536-2958"
+[params.Logos]
+logo = "/branding/A+R Logo.svg"
+[params.utility_images]
+thank_you_background = "/pageimg/thank-you-contact.jpg"
+[params.address]
+city = "Statesboro"
+state = "GA"
+street = "P.O. Box 1514"
+zip = "30459-2853"
+[params.email]
+email = "bryce@AR-US.com"
+[params.tracking]
+google_analytics = ""
+cloudinary_url = ""
+[params.social_links]
+facebook = ""
+insta = ""
+linkedin = ""
+pinterest = ""
