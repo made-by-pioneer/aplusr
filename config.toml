@@ -3,46 +3,90 @@ description = "Please bear with us. Our website is currently will be live on May
 languageCode = "en-us"
 theme = "site-theme"
 title = "A+R Valve USA, LLC"
+enableRobotsTXT = true
 [[menu.desktop]]
-identifier = "menu-desktop-1"
-name = "Menu Item 1"
-url = "/page-1"
-weight = 1
+    identifier = "metal-seated"
+    name = "Metal Seated"
+    url = "/metal-seated"
+    weight = 1
+        [[menu.desktop]]
+            identifier = "khm-710"
+            name = "KHM 710"
+            url = "/khm-710"
+            weight = 1
+            parent = "metal-seated"
 [[menu.desktop]]
-identifier = "menu-desktop-2"
-name = "Menu Item 2"
-url = "/page-2"
-weight = 2
+    identifier = "soft-seated"
+    name = "Soft Seated"
+    url = "/soft-seated"
+    weight = 2
+        [[menu.desktop]]
+            identifier = "khl-510"
+            name = "KHL 510"
+            url = "/khl-510"
+            weight = 1
+            parent = "soft-seated"
+        [[menu.desktop]]
+            identifier = "khf-710"
+            name = "KHF 710"
+            url = "/khf-710"
+            weight = 2
+            parent = "soft-seated"
 [[menu.desktop]]
-identifier = "menu-desktop-3"
-name = "Menu Item 3"
-url = "/page-3"
-weight = 3
+    identifier = "about-us"
+    name = "About Us"
+    url = "/about-us"
+    weight = 3
 [[menu.desktop]]
-identifier = "menu-desktop-4"
-name = "Menu Item 4"
-url = "/page-4"
-weight = 4
+    identifier = "contact-us"
+    name = "Contact Us"
+    url = "/contact-us"
+    weight = 4
 [[menu.mobile]]
-identifier = "menu-mobile-1"
-name = "Menu Item 1"
-url = "/page-1"
-weight = 1
+    identifier = "metal-seated"
+    name = "Metal Seated"
+    url = "/metal-seated"
+    weight = 1
+        [[menu.mobile]]
+            identifier = "khm-710"
+            name = "KHM 710"
+            url = "/khm-710"
+            weight = 1
+            parent = "metal-seated"
 [[menu.mobile]]
-identifier = "menu-mobile-2"
-name = "Menu Item 2"
-url = "/page-2"
-weight = 2
+    identifier = "soft-seated"
+    name = "Soft Seated"
+    url = "/soft-seated"
+    weight = 2
+        [[menu.mobile]]
+            identifier = "khl-510"
+            name = "KHL 510"
+            url = "/khl-510"
+            weight = 1
+            parent = "soft-seated"
+        [[menu.mobile]]
+            identifier = "khf-710"
+            name = "KHF 710"
+            url = "/khf-710"
+            weight = 2
+            parent = "soft-seated"
 [[menu.mobile]]
-identifier = "menu-mobile-3"
-name = "Menu Item 3"
-url = "/page-3"
-weight = 3
+    identifier = "about-us"
+    name = "About Us"
+    url = "/about-us"
+    weight = 3
+[[menu.mobile]]
+    identifier = "contact-us"
+    name = "Contact Us"
+    url = "/contact-us"
+    weight = 4
 [params.Contact_Numbers]
 Phone = "912-489-1377"
 Secondary_phone = "912-536-2958"
 [params.Logos]
+dark_logo = "/pageimg/example-logo.png"
 logo = "/branding/A+R Logo.svg"
+mobile_menu_logo = "/branding/mobile-logo.svg"
 [params.utility_images]
 thank_you_background = "/pageimg/thank-you-contact.jpg"
 [params.address]
@@ -60,3 +104,28 @@ facebook = ""
 insta = ""
 linkedin = ""
 pinterest = ""
+[params.publishing_settings]
+site_in_production = false
+
+[sitemap]
+filename = "sitepages.xml"
+
+[outputFormats]
+    [outputFormats.sitemapindex]
+        baseName = "sitemapindex"
+        isPlainText = false
+        mediaType = "application/xml"
+        path = "/"
+    [outputFormats.sitepages]
+        baseName = "sitepages"
+        isPlainText = false
+        mediaType = "application/xml"
+        path = "/"
+    [outputFormats.siteposts]
+        baseName = "siteposts"
+        isPlainText = false
+        mediaType = "application/xml"
+        path = "/"
+
+[outputs]
+  home = ["HTML", "sitemapindex", "sitepages", "siteposts", "RSS"]

@@ -48,6 +48,7 @@ let colors = {
   'color-D2232A': '#D2232A',
   'color-171511': '#171511',
   'color-A61C21': '#A61C21',
+  'color-E0484E': '#E0484E',
   'transparent': 'transparent',
 
   'black': '#22292f',
@@ -482,6 +483,7 @@ module.exports = {
     '12': '3rem',
     '16': '4rem',
     '24': '6rem',
+    '98': '6.125rem',
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
@@ -611,6 +613,7 @@ module.exports = {
     '6': '1.5rem',
     '8': '2rem',
     '10': '2.5rem',
+    '45': '2.8125rem',
     '12': '3rem',
     '16': '4rem',
     '20': '5rem',
