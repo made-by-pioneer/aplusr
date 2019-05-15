@@ -1,0 +1,92 @@
+{{ define "main" }}
+
+<style>
+.product-background-image {
+    background-image: url("/pageimg/KHF710_Met_Met_w-RGB__-_Kopie.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.illustration-background {
+    background-image: url("/pageimg/AVI.A+R.RedBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
+.KHF710-background {
+    background-image: url("/pageimg/KHF710.svg");
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 250px 0 250px 0;
+  }
+@media screen and (min-width:768px) {
+.KHF710-background {
+    background-size: 45%;
+    padding: 300px 0 300px 0;
+  }
+}
+@media screen and (min-width:992px) {
+.KHF710-background {
+    background-size: 45%;
+    padding: 400px 0 500px 0;
+  }
+}
+@media screen and (min-width:1440px) {
+.KHF710-background {
+    background-size: 45%;
+    padding: 400px 0 500px 0;
+  }
+}
+</style>
+
+<div class="flex flex-wrap pt-24 pb-80">
+    <div class="flex flex-wrap w-full items-center mx-auto">
+        <div class="w-full md:w-5/6 lg:w-3/4 mx-6 md:mx-24 lg:mx-56">
+            <div class="font-DIN-Medium text-2xs uppercase"> HOME <i class="fas fa-angle-right"></i> Metal Seated <i class="fas fa-angle-right"></i> KHM 710</div>
+            <h1 class="font-DIN-Bold text-4.5xl text-color-171511 leading-none">KHM 710 Metal Seated Ball Valve</h1>
+        </div>
+        <div class="w-5/6 lg:w-1/3 mx-auto my-16 product-background-image">
+            <div class="py-40"></div>
+        </div>
+        <div class="w-5/6 lg:w-1/3 mx-auto lg:mx-0 lg:mr-auto">
+            <div class="pb-3">
+                <h2 class="font-DIN-Bold text-2xl text-color-171511">KHM 710 High Preformance Metal Seated Ball Valves</h2>
+            </div>
+            <ul class="font-DIN-Regular text-base text-color-171511 list-disc list-inside">
+                <li><span class="-ml-3">Size Range: 1/2” - 12”</span></li>
+                <li><span class="-ml-3">Pressure Classes: ANSI Classes: 150/300/600/900</span></li>
+                <li><span class="-ml-3">Temperature Range: -58 F - +752 F (1200 F available)</span></li>
+                <li><span class="-ml-3">Seat Hardening Options: Standard: Boronized, Optional HVOF: Tungsten Carbide and Chromium Carbide</span></li>
+                <li><span class="-ml-3">Body Materials: Stocked Materials are 316 Stainless Steel and WCB Carbon Steel. Special Alloys available include Duplex, Super Duplex and Hastelloy to name but a few!</span></li>
+            </ul>
+            <div class="pt-6">
+                <a href="/contact-us/" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">Order Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="flex flex-wrap pb-32 illustration-background">
+    <div class="relative flex flex-wrap w-full bg-white -mt-48 mx-2 md:mx-10 xxl:mx-20 text-center shadow-2xl KHF710-background">
+        <h2 class="absolute top-0 pt-12 pl-16 md:pl-24 font-DIN-Bold text-4.5xl text-color-171511">KHF 710</h2>
+        <p class="w-72 absolute top-0 mt-40 ml-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-left hidden lg:block">1/2” - 12” ANSI 150# - 900#</p>
+        <p class="w-72 absolute top-0 right-0 mt-72 xxl:mt-48 mr-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-right hidden lg:block">Body Materials: Stocked Materials are 316 Stainless Steel and WCB Carbon Steel.</p>
+        <p class="w-72 absolute pl-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-left hidden lg:block">Temperature range: -58°F - +752°F,  1200°F available</p>
+        <p class="w-72 absolute right-0 mt-56 xl:mt-20 xxl:mt-5 mr-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-right hidden lg:block">Special Alloy body materials available include Duplex, Super Duplex and Hastelloy</p>
+        <p class="w-72 absolute bottom-0 pb-20 xl:pb-16 ml-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-left hidden lg:block">Free Floating Design with Downstream Loaded Inconel 625 Seat Spring or optional Trunnion Mounted Interference Fit Design</p>
+        <p class="w-72 absolute bottom-0 right-0 pb-20 xl:pb-16 mr-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-right hidden lg:block">Seat Hardening Options: Standard: Boronized, Optional HVOF: Tungsten Carbide and Chromium Carbide</p>
+    </div>
+    <div class="lg:hidden relative flex flex-wrap w-full bg-white mt-8 mx-2 md:mx-32 xxl:mx-20 p-8 text-center shadow-2xl">
+        <ul class="font-DIN-Regular text-base text-color-171511 list-disc list-inside text-left">
+            <li class="pb-4"><span class="-ml-3">1/2” - 12” ANSI 150# - 900#</span></li>
+            <li class="pb-4"><span class="-ml-3">Body Materials: Stocked Materials are 316 Stainless Steel and WCB Carbon Steel.</span></li>
+            <li class="pb-4"><span class="-ml-3">Temperature range: -58°F - +752°F,  1200°F available</span></li>
+            <li class="pb-4"><span class="-ml-3">Special Alloy body materials available include Duplex, Super Duplex and Hastelloy</span></li>
+            <li class="pb-4"><span class="-ml-3">Free Floating Design with Downstream Loaded Inconel 625 Seat Spring or optional Trunnion Mounted Interference Fit Design</span></li>
+            <li><span class="-ml-3">Seat Hardening Options: Standard: Boronized, Optional HVOF: Tungsten Carbide and Chromium Carbide</span></li>
+        </ul>
+    </div>
+</div>
+
+{{ end }}

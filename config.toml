@@ -7,12 +7,12 @@ enableRobotsTXT = true
 [[menu.desktop]]
     identifier = "metal-seated"
     name = "Metal Seated"
-    url = "/metal-seated"
+    url = "/"
     weight = 1
         [[menu.desktop]]
             identifier = "khm-710"
             name = "KHM 710"
-            url = "/khm-710"
+            url = "/khm-710-metal-seated/"
             weight = 1
             parent = "metal-seated"
 [[menu.desktop]]
@@ -23,24 +23,24 @@ enableRobotsTXT = true
         [[menu.desktop]]
             identifier = "khl-510"
             name = "KHL 510"
-            url = "/khl-510"
+            url = "/khl-510-soft-seated/"
             weight = 1
             parent = "soft-seated"
         [[menu.desktop]]
             identifier = "khf-710"
             name = "KHF 710"
-            url = "/khf-710"
+            url = "/khf-710-soft-seated/"
             weight = 2
             parent = "soft-seated"
 [[menu.desktop]]
     identifier = "about-us"
     name = "About Us"
-    url = "/about-us"
+    url = "/about-us/"
     weight = 3
 [[menu.desktop]]
     identifier = "contact-us"
     name = "Contact Us"
-    url = "/contact-us"
+    url = "/contact-us/"
     weight = 4
 [[menu.mobile]]
     identifier = "metal-seated"
@@ -50,7 +50,7 @@ enableRobotsTXT = true
         [[menu.mobile]]
             identifier = "khm-710"
             name = "KHM 710"
-            url = "/khm-710"
+            url = "/khm-710-metal-seated/"
             weight = 1
             parent = "metal-seated"
 [[menu.mobile]]
@@ -61,24 +61,24 @@ enableRobotsTXT = true
         [[menu.mobile]]
             identifier = "khl-510"
             name = "KHL 510"
-            url = "/khl-510"
+            url = "/khl-510-soft-seated/"
             weight = 1
             parent = "soft-seated"
         [[menu.mobile]]
             identifier = "khf-710"
             name = "KHF 710"
-            url = "/khf-710"
+            url = "/khf-710-soft-seated/"
             weight = 2
             parent = "soft-seated"
 [[menu.mobile]]
     identifier = "about-us"
     name = "About Us"
-    url = "/about-us"
+    url = "/about-us/"
     weight = 3
 [[menu.mobile]]
     identifier = "contact-us"
     name = "Contact Us"
-    url = "/contact-us"
+    url = "/contact-us/"
     weight = 4
 [params.Contact_Numbers]
 Phone = "912-489-1377"
@@ -92,8 +92,10 @@ thank_you_background = "/pageimg/thank-you-contact.jpg"
 [params.address]
 city = "Statesboro"
 state = "GA"
-street = "P.O. Box 1514"
-zip = "30459-2853"
+street = "106 Raybon Anderson Blvd"
+zip = "30458"
+mailStreet = "P.O. Box 1514"
+mailZip = "30459-2853"
 [params.email]
 email = "bryce@AR-US.com"
 [params.tracking]

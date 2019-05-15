@@ -3,8 +3,6 @@ import $ from 'jquery';
 import AOS from 'aos';
 import './scriptTools/bootstrapDropdown.js';
 
-window.jQuery = window.$ = require('jquery');
-
 AOS.init({
     disable: 'mobile',
     once: true

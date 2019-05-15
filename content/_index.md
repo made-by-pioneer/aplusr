@@ -1,6 +1,6 @@
----
-type: page
-layout: home
-url: /
-title: 'Home'
----
++++
+type = "page"
+layout = "home"
+url = "/"
+title = "Home"
++++
