@@ -41,3 +41,13 @@
   background-color: transparent;
   border-color: transparent;
 }
+
+::-moz-selection {
+  color: #E0484E;
+  background-color: #e8e8e8;
+}
+
+::selection {
+  color: #E0484E;
+  background-color: #e8e8e8;
+}

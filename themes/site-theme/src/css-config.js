@@ -55,6 +55,7 @@ module.exports = {
       '80': '19rem',
       '90': '90px',
       '45': '45px',
+      '30px': '30px',
     },
     screens: {
       sm: '576px',

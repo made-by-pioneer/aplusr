@@ -5,20 +5,20 @@
   {{ range .Site.Menus.desktop }}
   {{ if .HasChildren }}
   <div class="inline font-DIN-Regular font-semibold select-none dropdown">
-  <a class="text-base opacity-100 hover:opacity-75 no-underline tracking-wide pr-4 desktop-menu-item" data-toggle="dropdown" id="{{ .Name | urlize }}-dropdown" role="button" aria-expanded="false">
+  <a class="text-base opacity-100 hover:text-color-D2232A no-underline tracking-wide pr-30px desktop-menu-item" data-toggle="dropdown" id="{{ .Name | urlize }}-dropdown" role="button" aria-expanded="false">
     {{ .Pre }}
       <span>{{ .Name }}</span><i class="text-xs pl-1 fas fa-caret-down"></i>
   </a>
   <div aria-labelledby="{{ .Name | urlize }}-dropdown" class="dropdown-menu" role="menu">
     {{ range .Children }}
     <div class="flex flex-wrap select-none p-1">
-        <a href="{{ .URL }}" class="w-full text-base text-black no-underline menu-item">{{ .Name }}</a>
+        <a href="{{ .URL }}" class="w-full text-base text-black hover:text-color-D2232A no-underline menu-item">{{ .Name }}</a>
     </div>
     {{ end }}
   </div>
   </div>
   {{ else }}
-  <a class="{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} active{{end}} text-base text-black font-DIN-Regular font-semibold opacity-100 hover:opacity-75 no-underline tracking-wide pr-4 select-none desktop-menu-item" href="{{.URL}}">{{ .Name }}</a>
+  <a class="{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} active{{end}} text-base text-black font-DIN-Regular font-semibold opacity-100 hover:text-color-D2232A no-underline tracking-wide pr-30px select-none desktop-menu-item" href="{{.URL}}">{{ .Name }}</a>
   {{ end }}{{ end }}
 </div>
 
