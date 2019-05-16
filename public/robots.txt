@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /
+
+
+
+Sitemap: https://ar-usa-demo.netlify.com/sitemapindex.xml
