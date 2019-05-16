@@ -97,7 +97,7 @@ zip = "30458"
 mailStreet = "P.O. Box 1514"
 mailZip = "30459-2853"
 [params.email]
-email = "bryce@AR-US.com"
+email = "info@AR-US.com"
 [params.tracking]
 google_analytics = ""
 cloudinary_url = ""

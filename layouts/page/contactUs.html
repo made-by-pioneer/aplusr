@@ -14,7 +14,7 @@
         <div class="flex flex-wrap w-full lg:w-1/2 pb-20 lg:pb-0">
             <div class="w-full font-DIN-Medium text-2xs uppercase"> <a href="/" class="hover:text-color-D2232A">HOME</a> <i class="px-2 fas fa-angle-right"></i> Contact Us</div>
             <h1 class="w-full font-DIN-Bold text-4.5xl text-color-171511 pb-2">Contact Us</h1>
-            <p class="w-full font-DIN-Regular text-xl text-color-171511 pb-8 pr-8">We would love to help you in any way we can. Whether you need a like-kind replacement of an existing ball valve, a new application, or maybe even a nagging, problem application, A+R Valve USA would like to help! Please phone us or fill out this general inquiry form and we will respond promptly!</p>
+            <p class="w-full font-DIN-Regular text-xl text-color-171511 pb-8 pr-8">We would love to help you in any way we can. Whether you need a like kind replacement of an existing ball valve, a new application or maybe even a nagging, problem application, A+R Valve USA would like to help! Please phone us or fill out this general inquiry form and we will respond to your promptly!</p>
             <div class="w-1/2 pb-8">
                 <h6 class="font-DIN-Medium text-base text-color-D2232A">Phone</h6>
                 <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Params.contact_numbers.Phone }}</p>
@@ -26,13 +26,13 @@
             <div class="w-full pb-8">
                 <h6 class="font-DIN-Medium text-base text-color-D2232A">Mailing Address</h6>
                 <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Title }}</p>
-                <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Params.address.street }}</p>
-                <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Params.address.city }},{{ .Site.Params.address.state }}</p>
+                <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Params.address.mailStreet }}</p>
+                <p class="font-DIN-Regular text-xl text-color-171511"> {{ .Site.Params.address.city }},{{ .Site.Params.address.state }} {{ .Site.Params.address.mailZip }}</p>
             </div>
             <div class="w-full">
                 <h6 class="font-DIN-Medium text-base text-color-D2232A">Physical Address</h6>
                 <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Title }}</p>
-                <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Params.address.mailStreet }} {{ .Site.Params.address.city }},{{ .Site.Params.address.state }} {{ .Site.Params.address.zip }}</p>
+                <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Params.address.street }} {{ .Site.Params.address.city }},{{ .Site.Params.address.state }} {{ .Site.Params.address.zip }}</p>
             </div>
         </div>
         <div class="flex flex-wrap w-full lg:w-1/2 items-start mx-auto">
