@@ -36,26 +36,28 @@
             </div>
         </div>
         <div class="flex flex-wrap w-full lg:w-1/2 items-start mx-auto">
-        <form class="flex flex-wrap">
+        <form class="flex flex-wrap" action="/thank-you" netlify-honeypot="field-for-coolguys" name="general-contact" method="POST" netlify>
+            <input type="hidden" name="subject" value="Contact from Website" />
             <div class="flex flex-wrap w-full lg:w-1/2 pb-6">
                 <label class="w-full font-DIN-Medium text-base text-color-171511">First Name</label>
-                <input type="text" placeholder="First Name" class="w-full lg:w-11/12 border border-color-CCCCCC focus:border-color-D2232A outline-none px-2 py-2">
+                <input name="first-name" type="text" placeholder="First Name" class="w-full lg:w-11/12 border border-color-CCCCCC focus:border-color-D2232A outline-none px-2 py-2" required>
             </div>
             <div class="flex flex-wrap w-full lg:w-1/2 pb-6">
                 <label class="w-full font-DIN-Medium text-base text-color-171511">Last Name</label>
-                <input type="text" placeholder="Last Name" class="w-full lg:w-11/12 border border-color-CCCCCC focus:border-color-D2232A outline-none px-2 py-2">
+                <input name="last-name" type="text" placeholder="Last Name" class="w-full lg:w-11/12 border border-color-CCCCCC focus:border-color-D2232A outline-none px-2 py-2" required>
             </div>
             <div class="flex flex-wrap w-full lg:w-1/2 pb-6">
                 <label class="w-full font-DIN-Medium text-base text-color-171511">Phone</label>
-                <input type="tel" placeholder="Phone" class="w-full lg:w-11/12 border border-color-CCCCCC focus:border-color-D2232A outline-none px-2 py-2">
+                <input name="phone-number" type="tel" placeholder="Phone" class="w-full lg:w-11/12 border border-color-CCCCCC focus:border-color-D2232A outline-none px-2 py-2" required>
             </div>
+            <input type="text" name="field-for-coolguys" style="display:none" />
             <div class="flex flex-wrap w-full lg:w-1/2 pb-6">
                 <label class="w-full font-DIN-Medium text-base text-color-171511">Email</label>
-                <input type="email" placeholder="Email" class="w-full lg:w-11/12 border border-color-CCCCCC focus:border-color-D2232A outline-none px-2 py-2">
+                <input name="email" type="email" placeholder="Email" class="w-full lg:w-11/12 border border-color-CCCCCC focus:border-color-D2232A outline-none px-2 py-2" required>
             </div>
             <div class="w-full pb-6">
                 <label class="w-full font-DIN-Medium text-base text-color-171511">Message</label>
-                <textarea type="text" placeholder="Message" class="w-full h-32 border border-color-CCCCCC focus:border-color-D2232A outline-none px-2 py-2"></textarea>
+                <textarea name="contact-message" type="text" placeholder="Message" class="w-full h-32 border border-color-CCCCCC focus:border-color-D2232A outline-none px-2 py-2" required></textarea>
             </div>
             <input type="submit" value="Submit" class="ml-auto bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide hover:cursor-pointer">
         </form>
