@@ -10,9 +10,9 @@ enableRobotsTXT = true
     url = "/"
     weight = 1
         [[menu.desktop]]
-            identifier = "khm-710"
-            name = "KHM 710"
-            url = "/khm-710-metal-seated/"
+            identifier = "khf-710-metal"
+            name = "KHF 710"
+            url = "/khf-710-metal-seated/"
             weight = 1
             parent = "metal-seated"
 [[menu.desktop]]
@@ -48,9 +48,9 @@ enableRobotsTXT = true
     url = "/metal-seated"
     weight = 1
         [[menu.mobile]]
-            identifier = "khm-710"
-            name = "KHM 710"
-            url = "/khm-710-metal-seated/"
+            identifier = "khf-710-metal"
+            name = "KHF 710"
+            url = "/khf-710-metal-seated/"
             weight = 1
             parent = "metal-seated"
 [[menu.mobile]]
