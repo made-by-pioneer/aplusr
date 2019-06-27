@@ -15,13 +15,13 @@
     background-position-x: center;
   }
   .product-1-valves {
-    background-image: url("/pageimg/KHF710_Met_Met_w-RGB__-_Kopie.jpg");
+    background-image: url("{{ .Params.bottomSection.firstColumn.columnImage }}");
     background-size: 45%;
     background-repeat: no-repeat;
     background-position: center;
   }
   .product-2-valves {
-    background-image: url("/pageimg/510.SoftSeated.jpg");
+    background-image: url("{{ .Params.bottomSection.secondColumn.columnImage }}");
     background-size: 65%;
     background-repeat: no-repeat;
     background-position: center;
@@ -40,15 +40,15 @@
 
 <div class="flex flex-wrap">
   <div class="w-5/6 mx-auto text-center pt-20">
-    <h1 class="font-DIN-Bold text-5xl sm:text-6xl text-color-171511 leading-none pb-3">Now closer than ever</h1>
+    <h1 class="font-DIN-Bold text-5xl sm:text-6xl text-color-171511 leading-none pb-3">{{ .Params.pageTitle }}</h1>
     <div class="pt-2">
-      <p class="font-DIN-Regular text-xl text-color-171511 leading-24">We offer same-day shipping for all A+R Armaturen<br> metal seated and soft seated ball valves.</p>
+      <p class="font-DIN-Regular text-xl text-color-171511 leading-24">{{ .Params.pageSubtitle | safeHTML }}</p>
     </div>
     <div class="pt-8">
       <span class="md:mr-4">
-        <a href="/contact-us/" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">Contact Us</a>
+        <a href="{{ .Params.contactUsLink }}" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">{{ .Params.contactUsText }}</a>
       </span>
-      <a href="/about-us/" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">Learn More</a>
+      <a href="{{ .Params.learnMoreLink }}" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">{{ .Params.learnMoreText }}</a>
     </div>
   </div>
 </div>
@@ -66,33 +66,33 @@
   <div class="flex flex-wrap w-full bg-white py-24 -mt-80 mx-2 md:mx-10 lg:mx-20 text-center shadow-2xl border border-color-EDEDED">
     <div class="w-3/4 lg:w-2/3 xl:w-1/2 mx-auto">
       <div class="pb-4">
-        <h2 class="font-DIN-Bold text-4xl md:text-4halfxl leading-none pb-3 md:pb-0">We're Ready When You Are</h2>
+        <h2 class="font-DIN-Bold text-4xl md:text-4halfxl leading-none pb-3 md:pb-0">{{ .Params.threeColumnBoxTitle }}</h2>
       </div>
-      <p class="font-DIN-Regular text-xl text-color-171511 leading-24">We know valve failures rarely happen at convinient times. Which is why we pride ourselves on having the best customer service. Whether it’s at 2pm or 2am, we’re ready when you are.</p>
+      <p class="font-DIN-Regular text-xl text-color-171511 leading-24">{{ .Params.threeColumnBoxSubtitle }}</p>
     </div>
     <div class="flex flex-wrap w-full mx-2 md:mx-12 xl:mx-24 pt-12">
       <div class="w-4/5 lg:w-1/3 px-4 mx-auto lg:mx-0 lg:ml-auto pb-12 lg:pb-0">
         <div class="pb-4">
-          <h3 class="font-DIN-Bold text-2xl text-color-D2232A leading-none">Same Day Shipping</h3>
+          <h3 class="font-DIN-Bold text-2xl text-color-D2232A leading-none">{{ .Params.threeColumnSection.firstColumn.columnTitle }}</h3>
         </div>
-        <p class="font-DIN-Regular text-base text-color-171511 leading-24">We offer same-day shipping on a large variety of A+R Armaturen metal seated and soft seated valves in ANSI Classes 150# and 300#.</p>
+        <p class="font-DIN-Regular text-base text-color-171511 leading-24">{{ .Params.threeColumnSection.firstColumn.columnParagraph }}</p>
       </div>
       <div class="w-4/5 lg:w-1/3 px-4 mx-auto lg:mx-0 lg:ml-auto pb-12 lg:pb-0">
         <div class="pb-4">
-          <h3 class="font-DIN-Bold text-2xl text-color-D2232A leading-none">24 Hr Response</h3>
+          <h3 class="font-DIN-Bold text-2xl text-color-D2232A leading-none">{{ .Params.threeColumnSection.secondColumn.columnTitle }}</h3>
         </div>
-        <p class="font-DIN-Regular text-base text-color-171511 leading-24">Whether it’s 2pm or 2am, A+R USA specializes in getting you the right valve at the right time. Call us today to see how quickly we can get you what you need!</p>
+        <p class="font-DIN-Regular text-base text-color-171511 leading-24">{{ .Params.threeColumnSection.secondColumn.columnParagraph }}</p>
       </div>
       <div class="w-4/5 lg:w-1/3 px-4 mx-auto lg:mx-0 lg:ml-auto">
         <div class="pb-3">
-          <h3 class="font-DIN-Bold text-2xl text-color-D2232A leading-none">Valves In Stock</h3>
+          <h3 class="font-DIN-Bold text-2xl text-color-D2232A leading-none">{{ .Params.threeColumnSection.thirdColumn.columnTitle }}</h3>
         </div>
-        <p class="font-DIN-Regular text-base text-color-171511 leading-24">We know valve failures rarely happen at convenient times, which is why we stock many of the valves you need in our warehouse to better serve you!</p>
+        <p class="font-DIN-Regular text-base text-color-171511 leading-24">{{ .Params.threeColumnSection.thirdColumn.columnParagraph }}</p>
       </div>
     </div>
   </div>
   <div class="w-full text-center pt-20">
-    <h2 class="font-DIN-Bold text-4xl md:text-4halfxl text-white">View Our Valves</h2>
+    <h2 class="font-DIN-Bold text-4xl md:text-4halfxl text-white">{{ .Params.bottomSection.columnTitle }}</h2>
   </div>
   <div class="flex flex-wrap w-full mx-auto pt-12">
     <div class="flex flex-wrap w-11/12 md:w-4/5 xl:w-1/3 mx-auto xl:mx-0 xl:ml-auto xl:mr-8 bg-white items-center pt-8 pb-10 px-5">
@@ -101,16 +101,16 @@
       </div>
       <div class="w-full md:w-1/2">
         <div class="pb-2">
-          <h6 class="font-DIN-Medium text-2xs text-color-D2232A uppercase">Products</h6>
+          <h6 class="font-DIN-Medium text-2xs text-color-D2232A uppercase">{{ .Params.bottomSection.firstColumn.topTitle }}</h6>
         </div>
         <div class="pb-2 pr-8">
-          <h4 class="font-DIN-Bold text-2xl leading-34">Metal Seated Ball Valves</h4>
+          <h4 class="font-DIN-Bold text-2xl leading-34">{{ .Params.bottomSection.firstColumn.columnTitle }}</h4>
         </div>
         <div class="pr-8">
-          <p class="font-DIN-Regular text-base text-color-171511 leading-24">View all of our high performance metal seated ball valves.</p>
+          <p class="font-DIN-Regular text-base text-color-171511 leading-24">{{ .Params.bottomSection.firstColumn.columnParagraph }}</p>
         </div>
         <div class="pt-8">
-          <a href="/khf-710-metal-seated/" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">View All</a>
+          <a href="{{ .Params.bottomSection.firstColumn.columnButtonLink }}" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">{{ .Params.bottomSection.firstColumn.columnButtonText }}</a>
         </div>
       </div>
     </div>
@@ -120,48 +120,20 @@
       </div>
       <div class="w-full md:w-1/2">
         <div class="pb-2">
-          <h6 class="font-DIN-Medium text-2xs text-color-D2232A uppercase">Products</h6>
+          <h6 class="font-DIN-Medium text-2xs text-color-D2232A uppercase">{{ .Params.bottomSection.secondColumn.topTitle }}</h6>
         </div>
         <div class="pb-2 pr-8">
-          <h4 class="font-DIN-Bold text-2xl leading-34">Soft Seated Ball Valves</h4>
+          <h4 class="font-DIN-Bold text-2xl leading-34">{{ .Params.bottomSection.secondColumn.columnTitle }}</h4>
         </div>
         <div class="pr-8">
-          <p class="font-DIN-Regular text-base text-color-171511 leading-24">View all of our high performance soft seated ball valves.</p>
+          <p class="font-DIN-Regular text-base text-color-171511 leading-24">{{ .Params.bottomSection.secondColumn.columnParagraph }}</p>
         </div>
         <div class="pt-8">
-          <a href="/soft-seated/" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">View All</a>
+          <a href="{{ .Params.bottomSection.secondColumn.columnButtonLink }}" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">{{ .Params.bottomSection.secondColumn.columnButtonText }}</a>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<!-- <div class="container flex flex-wrap h-100 mx-auto text-center items-center pt-20 pb-32">
-  <div class="w-5/6 md:w-2/3 mx-auto text-center pb-12">
-    <h1 class="font-DIN-Bold text-color-D2232A text-4.5xl pb-3">Coming Soon</h1>
-    <h2 class="font-DIN-Regular text-color-171511 text-xl">Please bear with us. Our website will be live on May 15th.</h2>
-  </div>
-  <div class="flex flex-wrap w-5/6 md:w-1/2 mx-auto">
-    <h3 class="w-full font-DIN-Medium text-color-D2232A text-2xs uppercase text-center pb-4">Contact Us</h3>
-    <div class="w-full md:w-1/2 lg:w-1/3 text-center md:text-left ml-auto pb-8 md:pb-0">
-      <p class="font-DIN-Regular text-color-171511 text-base leading-normal">Bryce Bunting</p>
-      <p class="font-DIN-Regular text-color-171511 text-base leading-normal">North American Sales</p>
-      <a href="tel:{{ .Site.Params.Contact_Numbers.Phone }}" class="font-DIN-Regular text-color-171511 text-base leading-normal no-underline hover:opacity-75">{{ .Site.Params.Contact_Numbers.Phone }}</a>
-
-      <br>
-
-      <a href="tel:{{ .Site.Params.Contact_Numbers.Secondary_Phone }}" class="font-DIN-Regular text-color-171511 text-base leading-normal no-underline hover:opacity-75">{{ .Site.Params.Contact_Numbers.Secondary_Phone }}</a>
-
-      <br>
-
-      <a href="mailto:{{ .Site.Params.Email.Email }}" class="font-DIN-Regular text-color-171511 text-base leading-normal no-underline hover:opacity-75">{{ .Site.Params.Email.Email }}</a>
-    </div>
-    <div class="w-full md:w-1/2 lg:w-1/3 text-center md:text-left mr-auto">
-      <p class="font-DIN-Regular text-color-171511 text-base leading-normal">{{ .Site.Title }}</p>
-      <p class="font-DIN-Regular text-color-171511 text-base leading-normal">{{ .Site.Params.Address.Street }}</p>
-      <p class="font-DIN-Regular text-color-171511 text-base leading-normal">{{ .Site.Params.Address.City }}, {{ .Site.Params.Address.State }}  {{ .Site.Params.Address.Zip }}</p>
-    </div>
-  </div>
-</div> -->
 
 {{ end }}

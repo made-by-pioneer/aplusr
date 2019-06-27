@@ -1,0 +1,73 @@
+---
+label: Soft Seated
+hide_body: true
+fields:
+- type: datetime
+  name: date
+  label: date
+  hidden: true
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+- type: text
+  name: title
+  label: title
+  hidden: true
+- type: text
+  name: type
+  label: type
+  hidden: true
+- type: text
+  name: url
+  label: url
+  hidden: true
+- type: text
+  name: pageTitle
+  label: pageTitle
+- type: field_group
+  name: fivetenSection
+  label: 510 Section
+  fields:
+  - type: file
+    name: sectionImage
+    label: Section Image
+  - type: text
+    name: sectionTopTitle
+    label: Section Top Title
+  - type: text
+    name: sectionTitle
+    label: Section Title
+  - type: text
+    name: sectionSubtitle
+    label: Section Subtitle
+  - type: text
+    name: sectionLearnMoreLink
+    label: Section Learn More Link
+  - type: text
+    name: sectionLearnMoreText
+    label: Section Learn More Text
+- type: field_group
+  name: seventenSection
+  label: 710 Section
+  fields:
+  - type: file
+    name: sectionImage
+    label: Section Image
+  - type: text
+    name: sectionTopTitle
+    label: Section Top Title
+  - type: text
+    name: sectionTitle
+    label: Section Title
+  - type: text
+    name: sectionSubtitle
+    label: Section Subtitle
+  - type: text
+    name: sectionLearnMoreLink
+    label: Section Learn More Link
+  - type: text
+    name: sectionLearnMoreText
+    label: Section Learn More Text
+pages:
+- content/pages/softSeated.md

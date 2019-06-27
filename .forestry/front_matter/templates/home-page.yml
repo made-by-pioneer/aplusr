@@ -1,0 +1,135 @@
+---
+label: Home Page
+hide_body: true
+fields:
+- type: datetime
+  name: date
+  label: date
+  hidden: true
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+- type: text
+  name: title
+  label: title
+  hidden: true
+- type: text
+  name: type
+  label: type
+  hidden: true
+- type: text
+  name: url
+  label: url
+  hidden: true
+- type: text
+  name: pageTitle
+  label: pageTitle
+- type: text
+  name: pageSubtitle
+  label: pageSubtitle
+- type: text
+  name: contactUsLink
+  label: contactUsLink
+- type: text
+  name: contactUsText
+  label: contactUsText
+- type: text
+  name: learnMoreLink
+  label: learnMoreLink
+- type: text
+  name: learnMoreText
+  label: learnMoreText
+- type: text
+  name: threeColumnBoxTitle
+  label: threeColumnBoxTitle
+- type: text
+  name: threeColumnBoxSubtitle
+  label: threeColumnBoxSubtitle
+- type: field_group
+  name: threeColumnSection
+  label: threeColumnSection
+  fields:
+  - type: field_group
+    name: firstColumn
+    label: firstColumn
+    fields:
+    - type: text
+      name: columnTitle
+      label: columnTitle
+    - type: text
+      name: columnParagraph
+      label: columnParagraph
+  - type: field_group
+    name: secondColumn
+    label: secondColumn
+    fields:
+    - type: text
+      name: columnTitle
+      label: columnTitle
+    - type: text
+      name: columnParagraph
+      label: columnParagraph
+  - type: field_group
+    name: thirdColumn
+    label: thirdColumn
+    fields:
+    - type: text
+      name: columnTitle
+      label: columnTitle
+    - type: text
+      name: columnParagraph
+      label: columnParagraph
+- type: field_group
+  name: bottomSection
+  label: bottomSection
+  fields:
+  - type: text
+      name: sectionTitle
+      label: sectionTitle
+  - type: field_group
+    name: firstColumn
+    label: firstColumn
+    fields:
+    - type: file
+      name: columnImage
+      label: Column Image
+    - type: text
+      name: topTitle
+      label: topTitle
+    - type: text
+      name: columnTitle
+      label: columnTitle
+    - type: text
+      name: columnParagraph
+      label: columnParagraph
+    - type: text
+      name: columnButtonLink
+      label: columnButtonLink
+    - type: text
+      name: columnButtonText
+      label: columnButtonText
+  - type: field_group
+    name: secondColumn
+    label: secondColumn
+    fields:
+    - type: file
+      name: columnImage
+      label: Column Image
+    - type: text
+      name: topTitle
+      label: topTitle
+    - type: text
+      name: columnTitle
+      label: columnTitle
+    - type: text
+      name: columnParagraph
+      label: columnParagraph
+    - type: text
+      name: columnButtonLink
+      label: columnButtonLink
+    - type: text
+      name: columnButtonText
+      label: columnButtonText
+pages:
+- content/_index.md

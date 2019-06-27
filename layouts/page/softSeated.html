@@ -1,13 +1,13 @@
 {{ define "main" }}
 <style>
 .product-1-soft-seated-valves {
-    background-image: url("/pageimg/KHM510.SoftSeated.jpg");
+    background-image: url("{{ .Params.fivetenSection.sectionImage }}");
     background-size: 55%;
     background-repeat: no-repeat;
     background-position: center;
   }
 .product-2-soft-seated-valves {
-    background-image: url("/pageimg/KHF710_Met_Met_w-RGB__-_Kopie.jpg");
+    background-image: url("{{ .Params.seventenSection.sectionImage }}");
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;
@@ -18,23 +18,23 @@
     <div class="flex flex-wrap w-4/5 lg:w-2/3 mx-auto">
         <div class="w-full">
             <div class="font-DIN-Medium text-2xs uppercase"> <a href="/" class="hover:text-color-D2232A">HOME</a> <i class="px-2 fas fa-angle-right"></i> Soft Seated</div>
-            <h1 class="font-DIN-Bold text-4halfxl text-color-171511 pb-2">Soft Seated Ball Valves</h1>
+            <h1 class="font-DIN-Bold text-4halfxl text-color-171511 pb-2">{{ .Params.pageTitle }}</h1>
             <div class="flex flex-wrap mx-auto xl:mx-0 xl:mr-auto mt-8 xl:mt-0 bg-white items-center pt-8 pb-10 px-5">
                 <div class="w-full md:w-1/2 product-1-soft-seated-valves">
                   <div class="py-24"></div>
                 </div>
                 <div class="w-full md:w-1/2">
                   <div class="pb-2">
-                    <h6 class="font-DIN-Medium text-2xs text-color-D2232A uppercase">Products</h6>
+                    <h6 class="font-DIN-Medium text-2xs text-color-D2232A uppercase">{{ .Params.fivetenSection.sectionTopTitle }}</h6>
                   </div>
                   <div class="pb-2 pr-8">
-                    <h4 class="font-DIN-Bold text-2xl leading-34">KHL 510 Soft Seated Ball Valves</h4>
+                    <h4 class="font-DIN-Bold text-2xl leading-34">{{ .Params.fivetenSection.sectionTitle }}</h4>
                   </div>
                   <div class="pr-8">
-                    <p class="font-DIN-Regular text-base text-color-171511 leading-24">KHL-510 is TFM Teflon™ Seated series. These are full port, investment cast ANSI and DIN flanged ball valves.</p>
+                    <p class="font-DIN-Regular text-base text-color-171511 leading-24">{{ .Params.fivetenSection.sectionSubtitle }}</p>
                   </div>
                   <div class="pt-8">
-                    <a href="/khl-510-soft-seated/" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">Learn More</a>
+                    <a href="{{ .Params.fivetenSection.sectionLearnMoreLink }}" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">{{ .Params.fivetenSection.sectionLearnMoreText }}</a>
                   </div>
                 </div>
               </div>
@@ -44,16 +44,16 @@
                 </div>
                 <div class="w-full md:w-1/2">
                   <div class="pb-2">
-                    <h6 class="font-DIN-Medium text-2xs text-color-D2232A uppercase">Products</h6>
+                    <h6 class="font-DIN-Medium text-2xs text-color-D2232A uppercase">{{ .Params.seventenSection.sectionTopTitle }}</h6>
                   </div>
                   <div class="pb-2 pr-8">
-                    <h4 class="font-DIN-Bold text-2xl leading-34">KHF 710 Soft Seated Ball Valves</h4>
+                    <h4 class="font-DIN-Bold text-2xl leading-34">{{ .Params.seventenSection.sectionTitle }}</h4>
                   </div>
                   <div class="pr-8">
-                    <p class="font-DIN-Regular text-base text-color-171511 leading-24">With a Spring Loaded Sealing System PTFE.</p>
+                    <p class="font-DIN-Regular text-base text-color-171511 leading-24">{{ .Params.seventenSection.sectionSubtitle }}</p>
                   </div>
                   <div class="pt-8">
-                    <a href="/khf-710-soft-seated/" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">Learn More</a>
+                    <a href="{{ .Params.seventenSection.sectionLearnMoreLink }}" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">{{ .Params.seventenSection.sectionLearnMoreText }}</a>
                   </div>
                 </div>
               </div>

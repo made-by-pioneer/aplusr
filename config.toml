@@ -125,5 +125,8 @@ cloudinary_url = ""
 google_analytics = ""
 [params.utility_images]
 thank_you_background = "/pageimg/thank-you-contact.jpg"
+[params.footer]
+footerLogo = "/branding/A+R.FullLogo.svg"
+footerAboutText = "A+R Valve USA, LLC is the North American master distributor for A+R Armaturen based in Bad Salzuflen, Germany, a leading European manufacturer of high performance ball valves."
 [sitemap]
 filename = "sitepages.xml"
