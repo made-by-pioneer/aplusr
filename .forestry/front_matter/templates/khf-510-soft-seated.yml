@@ -1,0 +1,73 @@
+---
+label: KHF 510 Soft Seated
+hide_body: true
+fields:
+- type: datetime
+  name: date
+  label: date
+  hidden: true
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+- type: text
+  name: title
+  label: title
+  hidden: true
+- type: text
+  name: type
+  label: type
+  hidden: true
+- type: text
+  name: url
+  label: url
+  hidden: true
+- type: file
+  name: mainPageImage
+  label: mainPageImage
+- type: text
+  name: pageTitle
+  label: pageTitle
+- type: text
+  name: pageListTitle
+  label: pageListTitle
+- type: list
+  name: pageList
+  label: pageList
+- type: file
+  name: moreInfoLink
+  label: moreInfoLink
+- type: text
+  name: moreInfoText
+  label: moreInfoText
+- type: text
+  name: orderNowLink
+  label: orderNowLink
+- type: text
+  name: orderNowText
+  label: orderNowText
+- type: text
+  name: illustrationTitle
+  label: illustrationTitle
+- type: file
+  name: illustrationImage
+  label: illustrationImage
+- type: field_group
+  name: illustrationInfo
+  label: illustrationInfo
+  fields:
+  - type: datetime
+    name: topLeft
+    label: topLeft
+  - type: text
+    name: topRight
+    label: topRight
+  - type: text
+    name: centerLeft
+    label: centerLeft
+  - type: textarea
+    name: bottomLeft
+    label: bottomLeft
+  - type: text
+    name: bottomRight
+    label: bottomRight
