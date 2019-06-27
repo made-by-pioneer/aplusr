@@ -74,3 +74,5 @@ fields:
   - type: text
     name: bottomRight
     label: bottomRight
+pages:
+- content/pages/KHF-710.md
