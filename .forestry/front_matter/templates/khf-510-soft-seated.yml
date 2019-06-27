@@ -71,3 +71,5 @@ fields:
   - type: text
     name: bottomRight
     label: bottomRight
+pages:
+- content/pages/KHL-510.md
