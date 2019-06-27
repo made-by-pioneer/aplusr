@@ -5,18 +5,23 @@ fields:
 - type: datetime
   name: date
   label: date
+  hidden: true
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: text
   name: title
   label: title
+  hidden: true
 - type: text
   name: type
   label: type
+  hidden: true
 - type: text
   name: url
   label: url
+  hidden: true
 - type: file
   name: mainPageImage
   label: mainPageImage
