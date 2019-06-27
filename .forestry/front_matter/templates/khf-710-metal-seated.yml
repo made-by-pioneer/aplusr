@@ -5,9 +5,24 @@ fields:
 - type: datetime
   name: date
   label: date
+- type: file
+  name: illustrationImage
+  label: illustrationImage
 - type: text
   name: layout
   label: layout
+- type: file
+  name: mainPageImage
+  label: mainPageImage
+- type: text
+  name: pageListTitle
+  label: pageListTitle
+- type: text
+  name: pageTitle
+  label: pageTitle
+- type: list
+  name: pageList
+  label: pageList
 - type: text
   name: title
   label: title
@@ -17,3 +32,40 @@ fields:
 - type: text
   name: url
   label: url
+- type: file
+  name: moreInfoLink
+  label: moreInfoLink
+- type: text
+  name: moreInfoText
+  label: moreInfoText
+- type: text
+  name: orderNowLink
+  label: orderNowLink
+- type: text
+  name: orderNowText
+  label: orderNowText
+- type: text
+  name: illustrationTitle
+  label: illustrationTitle
+- type: field_group
+  name: illustrationInfo
+  label: illustrationInfo
+  fields:
+  - type: datetime
+    name: topLeft
+    label: topLeft
+  - type: text
+    name: topRight
+    label: topRight
+  - type: text
+    name: centerLeft
+    label: centerLeft
+  - type: text
+    name: centerRight
+    label: centerRight
+  - type: textarea
+    name: bottomLeft
+    label: bottomLeft
+  - type: text
+    name: bottomRight
+    label: bottomRight
