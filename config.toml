@@ -114,7 +114,7 @@ zip = 30458
 [params.email]
 email = "info@AR-US.com"
 [params.publishing_settings]
-site_in_production = false
+site_in_production = true
 [params.social_links]
 facebook = ""
 insta = ""

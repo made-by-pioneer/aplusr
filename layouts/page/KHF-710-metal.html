@@ -8,13 +8,13 @@
     background-position: center;
   }
 .illustration-background {
-    background-image: url("{{ .Params.illustrationImage }}");
+    background-image: url("/pageimg/AVI.A+R.RedBackground.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
   }
 .KHF710-background {
-    background-image: url("/pageimg/KHF-710-metal.png");
+    background-image: url("{{ .Params.illustrationImage }}");
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
@@ -52,15 +52,13 @@
                 <h2 class="font-DIN-Bold text-2xl text-color-171511">{{ .Params.pageListTitle }}</h2>
             </div>
             <ul class="font-DIN-Regular text-base text-color-171511 list-disc list-inside">
-                <li><span class="-ml-1">Size Range: 1/2” - 12”</span></li>
-                <li><span class="-ml-1">Pressure Classes: ANSI Classes: 150/300/600/900</span></li>
-                <li><span class="-ml-1">Temperature Range: -58 F - +752 F (1200 F available)</span></li>
-                <li><span class="-ml-1">Seat Hardening Options: Standard: Boronized, Optional HVOF: Tungsten Carbide and Chromium Carbide</span></li>
-                <li><span class="-ml-1">Body Materials: Stocked Materials are 316 Stainless Steel and WCB Carbon Steel. Special Alloys available include Duplex, Super Duplex and Hastelloy to name but a few!</span></li>
+                {{ range .Params.pageList }}
+                <li><span class="-ml-1">{{ . }}</span></li>
+                {{ end }}
             </ul>
             <div class="pt-6">
-                <a href="/pdf/KHF710.METALSEAT.pdf/" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">More Info</a>
-                <a href="/contact-us/" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">Order Now</a>
+                <a href="{{ .Params.moreInfoLink }}" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">{{ .Params.moreInfoText }}</a>
+                <a href="{{ .Params.orderNowLink }}" class="bg-color-D2232A hover:bg-color-A61C21 active:bg-color-7B1419 text-white font-DIN-Regular text-base py-2 px-5 no-underline rounded-sm tracking-wide">{{ .Params.orderNowText }}</a>
             </div>
         </div>
     </div>
@@ -68,13 +66,13 @@
 
 <div class="flex flex-wrap pb-32 illustration-background">
     <div class="relative flex flex-wrap w-full bg-white -mt-48 mx-2 md:mx-10 xxl:mx-20 text-center shadow-2xl border border-color-EDEDED KHF710-background">
-        <h2 class="absolute top-0 pt-12 pl-16 md:pl-24 font-DIN-Bold text-4halfxl text-color-171511">KHF 710</h2>
-        <p class="w-72 absolute top-0 mt-40 ml-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-left hidden lg:block">1/2” - 12” ANSI 150# - 900#</p>
-        <p class="w-72 absolute top-0 right-0 mt-72 xxl:mt-48 mr-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-right hidden lg:block">Body Materials: Stocked Materials are 316 Stainless Steel and WCB Carbon Steel.</p>
-        <p class="w-72 absolute pl-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-left hidden lg:block">Temperature range: -58°F - +752°F,  1200°F available</p>
-        <p class="w-72 absolute right-0 mt-56 xl:mt-20 xxl:mt-5 mr-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-right hidden lg:block">Special Alloy body materials available include Duplex, Super Duplex and Hastelloy</p>
-        <p class="w-72 absolute bottom-0 pb-20 xl:pb-16 ml-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-left hidden lg:block">Free Floating Design with Downstream Loaded Inconel 625 Seat Spring or optional Trunnion Mounted Interference Fit Design</p>
-        <p class="w-72 absolute bottom-0 right-0 pb-20 xl:pb-16 mr-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-right hidden lg:block">Seat Hardening Options: Standard: Boronized, Optional HVOF: Tungsten Carbide and Chromium Carbide</p>
+        <h2 class="absolute top-0 pt-12 pl-16 md:pl-24 font-DIN-Bold text-4halfxl text-color-171511">{{ .Params.illustrationTitle }}</h2>
+        <p class="w-72 absolute top-0 mt-40 ml-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-left hidden lg:block">{{ .Params.illustrationInfo.topLeft }}</p>
+        <p class="w-72 absolute top-0 right-0 mt-72 xxl:mt-48 mr-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-right hidden lg:block">{{ .Params.illustrationInfo.topRight }}</p>
+        <p class="w-72 absolute pl-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-left hidden lg:block">{{ .Params.illustrationInfo.centerLeft }}</p>
+        <p class="w-72 absolute right-0 mt-56 xl:mt-20 xxl:mt-5 mr-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-right hidden lg:block">{{ .Params.illustrationInfo.centerRight }}</p>
+        <p class="w-72 absolute bottom-0 pb-20 xl:pb-16 ml-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-left hidden lg:block">{{ .Params.illustrationInfo.bottomLeft }}</p>
+        <p class="w-72 absolute bottom-0 right-0 pb-20 xl:pb-16 mr-24 font-DIN-Regular text-base xl:text-lg xxl:text-xl text-right hidden lg:block">{{ .Params.illustrationInfo.bottomRight }}</p>
     </div>
     <div class="lg:hidden relative flex flex-wrap w-full bg-white -mt-12 sm:-mt-5 mx-2 md:mx-10 xxl:mx-20 p-8 text-center">
         <ul class="font-DIN-Regular text-base text-color-171511 list-disc list-inside text-left">
