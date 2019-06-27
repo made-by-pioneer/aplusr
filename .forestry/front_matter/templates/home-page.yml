@@ -80,13 +80,13 @@ fields:
     - type: text
       name: columnParagraph
       label: columnParagraph
+- type: text
+    name: bottomSectionTitle
+    label: bottomSectionTitle
 - type: field_group
   name: bottomSection
   label: bottomSection
   fields:
-  - type: text
-      name: sectionTitle
-      label: sectionTitle
   - type: field_group
     name: firstColumn
     label: firstColumn

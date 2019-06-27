@@ -20,8 +20,7 @@ columnParagraph = "Whether it’s 2pm or 2am, A+R USA specializes in getting you
 [threeColumnSection.thirdColumn]
 columnTitle = "Valves In Stock"
 columnParagraph = "We know valve failures rarely happen at convenient times, which is why we stock many of the valves you need in our warehouse to better serve you!"
-[bottomSection]
-columnTitle = "View Our Valves"
+bottomSectionTitle = "View Our Valves"
 [bottomSection.firstColumn]
 columnImage = "/pageimg/KHF710_Met_Met_w-RGB__-_Kopie.jpg"
 topTitle = "Products"
