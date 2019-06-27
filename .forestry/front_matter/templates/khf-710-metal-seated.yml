@@ -1,0 +1,31 @@
+---
+label: KHF 710 Metal Seated
+hide_body: true
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+- type: text
+  name: url
+  label: url
+- type: file
+  name: mainPageImage
+  label: mainPageImage
+- type: file
+  name: illustrationImage
+  label: illustrationImage
+- type: text
+  name: pageTitle
+  label: pageTitle
+- type: text
+  name: pageListTitle
+  label: pageListTitle
