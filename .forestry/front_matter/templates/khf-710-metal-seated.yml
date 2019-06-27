@@ -29,3 +29,10 @@ fields:
 - type: text
   name: pageListTitle
   label: pageListTitle
+- name: pagelist
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Page List
