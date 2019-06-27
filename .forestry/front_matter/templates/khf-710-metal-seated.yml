@@ -5,33 +5,35 @@ fields:
 - type: datetime
   name: date
   label: date
-- type: file
-  name: illustrationImage
-  label: illustrationImage
+  hidden: true
 - type: text
   name: layout
   label: layout
+  hidden: true
+- type: text
+  name: title
+  label: title
+  hidden: true
+- type: text
+  name: type
+  label: type
+  hidden: true
+- type: text
+  name: url
+  label: url
+  hidden: true
 - type: file
   name: mainPageImage
   label: mainPageImage
 - type: text
-  name: pageListTitle
-  label: pageListTitle
-- type: text
   name: pageTitle
   label: pageTitle
+- type: text
+  name: pageListTitle
+  label: pageListTitle
 - type: list
   name: pageList
   label: pageList
-- type: text
-  name: title
-  label: title
-- type: text
-  name: type
-  label: type
-- type: text
-  name: url
-  label: url
 - type: file
   name: moreInfoLink
   label: moreInfoLink
@@ -47,6 +49,9 @@ fields:
 - type: text
   name: illustrationTitle
   label: illustrationTitle
+- type: file
+  name: illustrationImage
+  label: illustrationImage
 - type: field_group
   name: illustrationInfo
   label: illustrationInfo
