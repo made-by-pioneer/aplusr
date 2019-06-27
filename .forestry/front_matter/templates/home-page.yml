@@ -47,8 +47,8 @@ fields:
   name: threeColumnBoxSubtitle
   label: threeColumnBoxSubtitle
 - type: text
-    name: bottomSectionTitle
-    label: bottomSectionTitle
+  name: bottomSectionTitle
+  label: bottomSectionTitle
 - type: field_group_list
   name: threeColumnSection
   label: threeColumnSection
