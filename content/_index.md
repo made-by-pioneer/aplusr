@@ -11,6 +11,7 @@ learnMoreLink = "/about-us/"
 learnMoreText = "Learn More"
 threeColumnBoxTitle = "We're Ready When You Are"
 threeColumnBoxSubtitle = "We know valve failures rarely happen at convinient times. Which is why we pride ourselves on having the best customer service. Whether it’s at 2pm or 2am, we’re ready when you are."
+bottomSectionTitle = "View Our Valves"
 [threeColumnSection.firstColumn]
 columnTitle = "Same Day Shipping"
 columnParagraph = "We offer same-day shipping on a large variety of A+R Armaturen metal seated and soft seated valves in ANSI Classes 150# and 300#."
@@ -20,7 +21,6 @@ columnParagraph = "Whether it’s 2pm or 2am, A+R USA specializes in getting you
 [threeColumnSection.thirdColumn]
 columnTitle = "Valves In Stock"
 columnParagraph = "We know valve failures rarely happen at convenient times, which is why we stock many of the valves you need in our warehouse to better serve you!"
-bottomSectionTitle = "View Our Valves"
 [bottomSection.firstColumn]
 columnImage = "/pageimg/KHF710_Met_Met_w-RGB__-_Kopie.jpg"
 topTitle = "Products"
