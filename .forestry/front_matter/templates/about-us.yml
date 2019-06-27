@@ -34,3 +34,5 @@ fields:
 - type: text
   name: buttonText
   label: buttonText
+pages:
+- content/pages/aboutUs.md
