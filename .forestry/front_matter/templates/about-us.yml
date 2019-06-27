@@ -1,0 +1,31 @@
+---
+label: About Us
+hide_body: false
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+- type: text
+  name: url
+  label: url
+- type: file
+  name: mainPageImage
+  label: mainPageImage
+- type: text
+  name: pageTitle
+  label: pageTitle
+- type: text
+  name: buttonLink
+  label: buttonLink
+- type: text
+  name: buttonText
+  label: buttonText
