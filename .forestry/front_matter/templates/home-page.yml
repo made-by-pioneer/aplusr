@@ -46,7 +46,7 @@ fields:
 - type: text
   name: threeColumnBoxSubtitle
   label: threeColumnBoxSubtitle
-- type: field_group
+- type: field_group_list
   name: threeColumnSection
   label: threeColumnSection
   fields:
@@ -83,7 +83,7 @@ fields:
 - type: text
     name: bottomSectionTitle
     label: bottomSectionTitle
-- type: field_group
+- type: field_group_list
   name: bottomSection
   label: bottomSection
   fields:
