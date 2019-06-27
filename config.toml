@@ -1,85 +1,102 @@
 baseURL = "https://ar-us.com/"
-description = "Please bear with us. Our website is currently will be live on May 15th."
+description = "We know valve failures rarely happen at convenient times. Which is why we pride ourselves on having the best customer service. Whether it’s at 2pm or 2am, we’re ready when you are."
+enableRobotsTXT = true
 languageCode = "en-us"
 theme = "site-theme"
 title = "A+R Valve USA, LLC"
-enableRobotsTXT = true
 [[menu.desktop]]
-    identifier = "metal-seated"
-    name = "Metal Seated"
-    url = "/"
-    weight = 1
-        [[menu.desktop]]
-            identifier = "khf-710-metal"
-            name = "KHF 710"
-            url = "/khf-710-metal-seated/"
-            weight = 1
-            parent = "metal-seated"
+identifier = "metal-seated"
+name = "Metal Seated"
+url = "/"
+weight = 1
 [[menu.desktop]]
-    identifier = "soft-seated"
-    name = "Soft Seated"
-    url = "/soft-seated"
-    weight = 2
-        [[menu.desktop]]
-            identifier = "khl-510"
-            name = "KHL 510"
-            url = "/khl-510-soft-seated/"
-            weight = 1
-            parent = "soft-seated"
-        [[menu.desktop]]
-            identifier = "khf-710"
-            name = "KHF 710"
-            url = "/khf-710-soft-seated/"
-            weight = 2
-            parent = "soft-seated"
+identifier = "khf-710-metal"
+name = "KHF 710"
+parent = "metal-seated"
+url = "/khf-710-metal-seated/"
+weight = 1
 [[menu.desktop]]
-    identifier = "about-us"
-    name = "About Us"
-    url = "/about-us/"
-    weight = 3
+identifier = "soft-seated"
+name = "Soft Seated"
+url = "/soft-seated"
+weight = 2
 [[menu.desktop]]
-    identifier = "contact-us"
-    name = "Contact Us"
-    url = "/contact-us/"
-    weight = 4
+identifier = "khl-510"
+name = "KHL 510"
+parent = "soft-seated"
+url = "/khl-510-soft-seated/"
+weight = 1
+[[menu.desktop]]
+identifier = "khf-710"
+name = "KHF 710"
+parent = "soft-seated"
+url = "/khf-710-soft-seated/"
+weight = 2
+[[menu.desktop]]
+identifier = "about-us"
+name = "About Us"
+url = "/about-us/"
+weight = 3
+[[menu.desktop]]
+identifier = "contact-us"
+name = "Contact Us"
+url = "/contact-us/"
+weight = 4
 [[menu.mobile]]
-    identifier = "metal-seated"
-    name = "Metal Seated"
-    url = "/metal-seated"
-    weight = 1
-        [[menu.mobile]]
-            identifier = "khf-710-metal"
-            name = "KHF 710"
-            url = "/khf-710-metal-seated/"
-            weight = 1
-            parent = "metal-seated"
+identifier = "metal-seated"
+name = "Metal Seated"
+url = "/metal-seated"
+weight = 1
 [[menu.mobile]]
-    identifier = "soft-seated"
-    name = "Soft Seated"
-    url = "/soft-seated"
-    weight = 2
-        [[menu.mobile]]
-            identifier = "khl-510"
-            name = "KHL 510"
-            url = "/khl-510-soft-seated/"
-            weight = 1
-            parent = "soft-seated"
-        [[menu.mobile]]
-            identifier = "khf-710"
-            name = "KHF 710"
-            url = "/khf-710-soft-seated/"
-            weight = 2
-            parent = "soft-seated"
+identifier = "khf-710-metal"
+name = "KHF 710"
+parent = "metal-seated"
+url = "/khf-710-metal-seated/"
+weight = 1
 [[menu.mobile]]
-    identifier = "about-us"
-    name = "About Us"
-    url = "/about-us/"
-    weight = 3
+identifier = "soft-seated"
+name = "Soft Seated"
+url = "/soft-seated"
+weight = 2
 [[menu.mobile]]
-    identifier = "contact-us"
-    name = "Contact Us"
-    url = "/contact-us/"
-    weight = 4
+identifier = "khl-510"
+name = "KHL 510"
+parent = "soft-seated"
+url = "/khl-510-soft-seated/"
+weight = 1
+[[menu.mobile]]
+identifier = "khf-710"
+name = "KHF 710"
+parent = "soft-seated"
+url = "/khf-710-soft-seated/"
+weight = 2
+[[menu.mobile]]
+identifier = "about-us"
+name = "About Us"
+url = "/about-us/"
+weight = 3
+[[menu.mobile]]
+identifier = "contact-us"
+name = "Contact Us"
+url = "/contact-us/"
+weight = 4
+[outputFormats.sitemapindex]
+baseName = "sitemapindex"
+isPlainText = false
+mediaType = "application/xml"
+path = "/"
+[outputFormats.sitepages]
+baseName = "sitepages"
+isPlainText = false
+mediaType = "application/xml"
+path = "/"
+[outputFormats.siteposts]
+baseName = "siteposts"
+isPlainText = false
+mediaType = "application/xml"
+path = "/"
+[outputs]
+home = ["HTML", "sitemapindex", "sitepages", "siteposts", "RSS"]
 [params.Contact_Numbers]
 Phone = "912-489-1377"
 Secondary_phone = "912-536-2958"
@@ -87,47 +104,26 @@ Secondary_phone = "912-536-2958"
 dark_logo = "/pageimg/example-logo.png"
 logo = "/branding/A+R Logo.svg"
 mobile_menu_logo = "/branding/mobile-logo.svg"
-[params.utility_images]
-thank_you_background = "/pageimg/thank-you-contact.jpg"
 [params.address]
 city = "Statesboro"
-state = "GA"
-street = "106 Raybon Anderson Blvd"
-zip = "30458"
 mailStreet = "P.O. Box 1514"
 mailZip = "30459-2853"
+state = "GA"
+street = "106 Raybon Anderson Blvd"
+zip = 30458
 [params.email]
 email = "info@AR-US.com"
-[params.tracking]
-google_analytics = ""
-cloudinary_url = ""
+[params.publishing_settings]
+site_in_production = false
 [params.social_links]
 facebook = ""
 insta = ""
 linkedin = ""
 pinterest = ""
-[params.publishing_settings]
-site_in_production = false
-
+[params.tracking]
+cloudinary_url = ""
+google_analytics = ""
+[params.utility_images]
+thank_you_background = "/pageimg/thank-you-contact.jpg"
 [sitemap]
 filename = "sitepages.xml"
-
-[outputFormats]
-    [outputFormats.sitemapindex]
-        baseName = "sitemapindex"
-        isPlainText = false
-        mediaType = "application/xml"
-        path = "/"
-    [outputFormats.sitepages]
-        baseName = "sitepages"
-        isPlainText = false
-        mediaType = "application/xml"
-        path = "/"
-    [outputFormats.siteposts]
-        baseName = "siteposts"
-        isPlainText = false
-        mediaType = "application/xml"
-        path = "/"
-
-[outputs]
-  home = ["HTML", "sitemapindex", "sitepages", "siteposts", "RSS"]
