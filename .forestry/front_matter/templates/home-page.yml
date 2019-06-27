@@ -46,10 +46,7 @@ fields:
 - type: text
   name: threeColumnBoxSubtitle
   label: threeColumnBoxSubtitle
-- type: text
-  name: bottomSectionTitle
-  label: bottomSectionTitle
-- type: field_group_list
+- type: field_group
   name: threeColumnSection
   label: threeColumnSection
   fields:
@@ -83,7 +80,10 @@ fields:
     - type: text
       name: columnParagraph
       label: columnParagraph
-- type: field_group_list
+- type: text
+  name: bottomSectionTitle
+  label: bottomSectionTitle
+- type: field_group
   name: bottomSection
   label: bottomSection
   fields:
