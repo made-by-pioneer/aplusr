@@ -36,3 +36,5 @@ fields:
     min: 
     max: 
   label: Page List
+pages:
+- content/pages/KHF-710-metal.md
