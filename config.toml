@@ -107,7 +107,7 @@ mobile_menu_logo = "/branding/mobile-logo.svg"
 [params.address]
 city = "Statesboro"
 mailStreet = "P.O. Box 1514"
-mailZip = "30459-2853"
+mailZip = "30459-1514"
 state = "GA"
 street = "106 Raybon Anderson Blvd"
 zip = 30458
