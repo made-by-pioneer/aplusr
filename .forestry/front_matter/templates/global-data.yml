@@ -1,0 +1,66 @@
+---
+label: Global Data
+hide_body: true
+fields:
+- type: field_group
+  name: logos
+  label: logos
+  fields:
+  - type: file
+    name: dark_logo
+    label: dark_logo
+  - type: file
+    name: logo
+    label: logo
+  - type: file
+    name: mobile_menu_logo
+    label: mobile_menu_logo
+- type: field_group
+  name: footer
+  label: footer
+  fields:
+  - type: file
+    name: footerLogo
+    label: footerLogo
+  - type: textarea
+    name: footerAboutText
+    label: footerAboutText
+- type: field_group
+  name: contact_numbers
+  label: contact_numbers
+  fields:
+  - type: text
+    name: Phone
+    label: Phone
+  - type: text
+    name: Secondary_phone
+    label: Secondary_phone
+- type: field_group
+  name: address
+  label: address
+  fields:
+  - type: text
+    name: city
+    label: city
+  - type: text
+    name: mailStreet
+    label: mailStreet
+  - type: text
+    name: mailZip
+    label: mailZip
+  - type: text
+    name: state
+    label: state
+  - type: text
+    name: street
+    label: street
+  - type: number
+    name: zip
+    label: zip
+- type: field_group
+  name: email
+  label: email
+  fields:
+  - type: text
+    name: email
+    label: email
