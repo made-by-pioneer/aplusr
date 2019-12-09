@@ -27,7 +27,7 @@ parent = "Soft Seated"
 url = "/khl-510-soft-seated/"
 weight = 1
 [[menu.desktop]]
-identifier = "KHF 710"
+identifier = "KHF 710 Soft"
 name = "KHF 710"
 parent = "Soft Seated"
 url = "/khf-710-soft-seated/"
@@ -65,7 +65,7 @@ parent = "Soft Seated"
 url = "/khl-510-soft-seated/"
 weight = 1
 [[menu.mobile]]
-identifier = "KHF 710"
+identifier = "KHF 710 Soft"
 name = "KHF 710"
 parent = "Soft Seated"
 url = "/khf-710-soft-seated/"
@@ -102,8 +102,8 @@ Phone = "912-489-1377"
 Secondary_phone = "912-536-2958"
 [params.Logos]
 dark_logo = "/pageimg/example-logo.png"
-logo = "/branding/A+R Logo.svg"
-mobile_menu_logo = "/branding/mobile-logo.svg"
+logo = "/v1575925944/AplusR/A_R_Logo_ounw3r.svg"
+mobile_menu_logo = "/v1575925944/AplusR/mobile-logo_bn2t9k.svg"
 [params.address]
 city = "Statesboro"
 mailStreet = "P.O. Box 1514"
@@ -121,12 +121,12 @@ insta = ""
 linkedin = ""
 pinterest = ""
 [params.tracking]
-cloudinary_url = ""
+cloudinary_url = "https://res.cloudinary.com/pioneer-design/image/upload"
 google_analytics = ""
 [params.utility_images]
 thank_you_background = "/pageimg/thank-you-contact.jpg"
 [params.footer]
-footerLogo = "/branding/A+R.FullLogo.svg"
+footerLogo = "/v1575925944/AplusR/A_R.FullLogo_txyubw.svg"
 footerAboutText = "A+R Valve USA, LLC is the North American master distributor for A+R Armaturen based in Bad Salzuflen, Germany, a leading European manufacturer of high performance ball valves."
 [sitemap]
 filename = "sitepages.xml"
