@@ -2,19 +2,19 @@
 
 <style>
 .product-background-image {
-    background-image: url("{{ .Params.mainPageImage }}");
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.mainPageImage }}");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
 .illustration-background {
-    background-image: url("/pageimg/AVI.A+R.RedBackground.jpg");
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}/v1575925903/AplusR/AVI.A_R.RedBackground_mohmoh.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
   }
 .KHF710-background {
-    background-image: url("{{ .Params.illustrationImage }}");
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.illustrationImage }}");
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;

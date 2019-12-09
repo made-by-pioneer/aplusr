@@ -1,13 +1,13 @@
 {{ define "main" }}
 <style>
 .product-1-soft-seated-valves {
-    background-image: url("{{ .Params.fivetenSection.sectionImage }}");
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.fivetenSection.sectionImage }}");
     background-size: 55%;
     background-repeat: no-repeat;
     background-position: center;
   }
 .product-2-soft-seated-valves {
-    background-image: url("{{ .Params.seventenSection.sectionImage }}");
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.seventenSection.sectionImage }}");
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: center;

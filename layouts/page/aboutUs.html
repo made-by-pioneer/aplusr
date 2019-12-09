@@ -2,7 +2,7 @@
 
 <style>
 .aboutUs-background-image {
-    background-image: url("{{ .Params.mainPageImage }}");
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Page.Params.mainPageImage }}");
     background-size: 90%;
     background-repeat: no-repeat;
     background-position-x: center;

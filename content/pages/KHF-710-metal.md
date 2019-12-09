@@ -1,9 +1,9 @@
 +++
 date = "2019-05-13T19:56:26+00:00"
-illustrationImage = "/pageimg/KHF-710-metal.png"
+illustrationImage = "/v1575925904/AplusR/KHF-710-metal_oo8uxg.png"
 illustrationTitle = "KHF 710"
 layout = "KHF-710-metal"
-mainPageImage = "/pageimg/KHF710_Met_Met_w-RGB__-_Kopie.jpg"
+mainPageImage = "/v1575925903/AplusR/KHF710_Met_Met_w-RGB__-_Kopie_lawmlq.jpg"
 moreInfoLink = "/pdf/KHF710.METALSEAT.pdf/"
 moreInfoText = "More Info"
 orderNowLink = "/contact-us/"

@@ -2,26 +2,26 @@
 
 <style>
   .top-products-together {
-    background-image: url("/pageimg/together-products.png");
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}/v1575925904/AplusR/together-products_iyykfs.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
     z-index:-999;
   }
   .illustration-background {
-    background-image: url("/pageimg/AVI.A+R.RedBackground.jpg");
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}/v1575925903/AplusR/AVI.A_R.RedBackground_mohmoh.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
   }
   .product-1-valves {
-    background-image: url("{{ .Params.bottomSection.firstColumn.columnImage }}");
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.bottomSection.firstColumn.columnImage }}");
     background-size: 45%;
     background-repeat: no-repeat;
     background-position: center;
   }
   .product-2-valves {
-    background-image: url("{{ .Params.bottomSection.secondColumn.columnImage }}");
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.bottomSection.secondColumn.columnImage }}");
     background-size: 65%;
     background-repeat: no-repeat;
     background-position: center;
