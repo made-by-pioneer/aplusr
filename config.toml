@@ -5,78 +5,78 @@ languageCode = "en-us"
 theme = "site-theme"
 title = "A+R Valve USA, LLC"
 [[menu.desktop]]
-identifier = "metal-seated"
+identifier = "Metal Seated"
 name = "Metal Seated"
 url = "/"
 weight = 1
 [[menu.desktop]]
-identifier = "khf-710-metal"
+identifier = "KHF 710"
 name = "KHF 710"
-parent = "metal-seated"
+parent = "Metal Seated"
 url = "/khf-710-metal-seated/"
 weight = 1
 [[menu.desktop]]
-identifier = "soft-seated"
+identifier = "Soft Seated"
 name = "Soft Seated"
 url = "/soft-seated"
 weight = 2
 [[menu.desktop]]
-identifier = "khl-510"
+identifier = "KHL 510"
 name = "KHL 510"
-parent = "soft-seated"
+parent = "Soft Seated"
 url = "/khl-510-soft-seated/"
 weight = 1
 [[menu.desktop]]
-identifier = "khf-710"
+identifier = "KHF 710"
 name = "KHF 710"
-parent = "soft-seated"
+parent = "Soft Seated"
 url = "/khf-710-soft-seated/"
 weight = 2
 [[menu.desktop]]
-identifier = "about-us"
+identifier = "About Us"
 name = "About Us"
 url = "/about-us/"
 weight = 3
 [[menu.desktop]]
-identifier = "contact-us"
+identifier = "Contact Us"
 name = "Contact Us"
 url = "/contact-us/"
 weight = 4
 [[menu.mobile]]
-identifier = "metal-seated"
+identifier = "Metal Seated"
 name = "Metal Seated"
 url = "/metal-seated"
 weight = 1
 [[menu.mobile]]
-identifier = "khf-710-metal"
+identifier = "KHF 710"
 name = "KHF 710"
-parent = "metal-seated"
+parent = "Metal Seated"
 url = "/khf-710-metal-seated/"
 weight = 1
 [[menu.mobile]]
-identifier = "soft-seated"
+identifier = "Soft Seated"
 name = "Soft Seated"
 url = "/soft-seated"
 weight = 2
 [[menu.mobile]]
-identifier = "khl-510"
+identifier = "KHL 510"
 name = "KHL 510"
-parent = "soft-seated"
+parent = "Soft Seated"
 url = "/khl-510-soft-seated/"
 weight = 1
 [[menu.mobile]]
-identifier = "khf-710"
+identifier = "KHF 710"
 name = "KHF 710"
-parent = "soft-seated"
+parent = "Soft Seated"
 url = "/khf-710-soft-seated/"
 weight = 2
 [[menu.mobile]]
-identifier = "about-us"
+identifier = "About Us"
 name = "About Us"
 url = "/about-us/"
 weight = 3
 [[menu.mobile]]
-identifier = "contact-us"
+identifier = "Contact Us"
 name = "Contact Us"
 url = "/contact-us/"
 weight = 4
