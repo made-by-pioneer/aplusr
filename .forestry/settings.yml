@@ -17,10 +17,10 @@ sections:
   label: Pages
   create: all
   match: "**/*"
-upload_dir: static/pageimg
-public_path: "/pageimg"
+upload_dir: ''
+public_path: ''
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_env:
