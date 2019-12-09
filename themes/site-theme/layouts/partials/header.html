@@ -9,7 +9,7 @@
 <section id="header" class="header-container">
   <div class="flex flex-wrap items-center pt-8 px-8 md:pt-45 md:px-90 md:h-98 select-none header-box">
     <a id="logo" class="w-1/2 md:w-1/3 lg:w-1/4 mr-auto" href="/">
-      <img class="" src="{{ .Site.Params.tracking.cloudinary_url }}{{ .Site.Params.logos.logo }}" width="130px">
+      <img class="" src="{{ .Site.Params.tracking.cloudinary_url }}{{ .Site.Data.global_data.logos.logo }}" width="130px">
     </a>
     {{ partial "siteNavi.html" . }}
   </div>
@@ -18,7 +18,7 @@
 <div class="bg-color-E0484E h-screen mobile-menu">
   <div class="pt-8 px-8 md:pt-45 md:px-90 md:h-98 flex flex-wrap items-center select-none">
     <a id="mobile-menu-logo" class="w-1/2 md:w-1/3 text-left" href="/">
-      <img class="" src="{{ .Site.Params.tracking.cloudinary_url }}{{ .Site.Params.Logos.mobile_menu_logo }}" width="120px">
+      <img class="" src="{{ .Site.Params.tracking.cloudinary_url }}{{ .Site.Data.global_data.logos.mobile_menu_logo }}" width="120px">
     </a>
     <i class="w-1/2 md:w-2/3 text-3xl text-white text-right fas fa-times close-menu"></i>
   </div>

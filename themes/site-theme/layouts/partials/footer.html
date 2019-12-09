@@ -7,10 +7,10 @@
     <div class="flex flex-wrap w-full md:w-1/3 pb-8 md:pb-0">
       <div class="w-full mx-auto text-center md:text-left">
         <div class="pb-4">
-          <img class="mx-auto md:mx-0 md:mr-auto" src="{{ .Site.Params.tracking.cloudinary_url }}{{ .Site.Params.footer.footerLogo }}" width="208px">
+          <img class="mx-auto md:mx-0 md:mr-auto" src="{{ .Site.Params.tracking.cloudinary_url }}{{ .Site.Data.global_data.footer.footerLogo }}" width="208px">
         </div>
         <div class="pb-8">
-          <p class="font-DIN-Regular text-sm leading-normal">{{ .Site.Params.footer.footerAboutText }}</p>
+          <p class="font-DIN-Regular text-sm leading-normal">{{ .Site.Data.global_data.footer.footerAboutText }}</p>
         </div>
         <p class="font-DIN-Regular text-2xs">&copy; {{ dateFormat "2006" now }} A+R USA, LLC All Rights Reserved.</p>
       </div>
@@ -40,13 +40,13 @@
       </div>
       <div class="flex flex-wrap w-full lg:w-1/3 mx-auto pb-8 md:pb-0 text-center md:text-left">
         <h6 class="w-full font-DIN-Medium text-base">Contact Us</h6>
-        <a class="w-full font-DIN-Regular text-base" href="/">{{ .Site.Params.contact_numbers.Phone }}</a>
+        <a class="w-full font-DIN-Regular text-base" href="/">{{ .Site.Data.global_data.contact_numbers.Phone }}</a>
         <div class="w-full pb-5">
-          <a class="font-DIN-Regular text-base" href="/">{{ .Site.Params.email.email }}</a>
+          <a class="font-DIN-Regular text-base" href="/">{{ .Site.Data.global_data.email.email }}</a>
         </div>
         <p class="w-full font-DIN-Regular text-base" href="/">{{ .Site.Title }}</p>
-        <p class="w-full font-DIN-Regular text-base" href="/">{{ .Site.Params.address.street }}</p>
-        <p class="w-full font-DIN-Regular text-base" href="/">{{ .Site.Params.address.city }},{{ .Site.Params.address.state }} {{ .Site.Params.address.zip }}</p>
+        <p class="w-full font-DIN-Regular text-base" href="/">{{ .Site.Data.global_data.address.street }}</p>
+        <p class="w-full font-DIN-Regular text-base" href="/">{{ .Site.Data.global_data.address.city }},{{ .Site.Data.global_data.address.state }} {{ .Site.Data.global_data.address.zip }}</p>
       </div>
     </div>
   </div>

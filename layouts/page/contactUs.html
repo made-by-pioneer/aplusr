@@ -13,22 +13,22 @@
             </div>
             <div class="w-1/2 pb-8">
                 <h6 class="font-DIN-Medium text-base text-color-D2232A">Phone</h6>
-                <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Params.contact_numbers.Phone }}</p>
+                <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Data.global_data.contact_numbers.Phone }}</p>
             </div>
             <div class="w-1/2 pb-8">
                 <h6 class="font-DIN-Medium text-base text-color-D2232A">Email</h6>
-                <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Params.email.email }}</p>
+                <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Data.global_data.email.email }}</p>
             </div>
             <div class="w-full pb-8">
                 <h6 class="font-DIN-Medium text-base text-color-D2232A">Mailing Address</h6>
                 <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Title }}</p>
-                <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Params.address.mailStreet }}</p>
-                <p class="font-DIN-Regular text-xl text-color-171511"> {{ .Site.Params.address.city }},{{ .Site.Params.address.state }} {{ .Site.Params.address.mailZip }}</p>
+                <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Data.global_data.address.mailStreet }}</p>
+                <p class="font-DIN-Regular text-xl text-color-171511"> {{ .Site.Data.global_data.address.city }},{{ .Site.Data.global_data.address.state }} {{ .Site.Data.global_data.address.mailZip }}</p>
             </div>
             <div class="w-full">
                 <h6 class="font-DIN-Medium text-base text-color-D2232A">Physical Address</h6>
                 <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Title }}</p>
-                <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Params.address.street }} {{ .Site.Params.address.city }},{{ .Site.Params.address.state }} {{ .Site.Params.address.zip }}</p>
+                <p class="font-DIN-Regular text-xl text-color-171511">{{ .Site.Data.global_data.address.street }}  {{ .Site.Data.global_data.address.city }},{{ .Site.Data.global_data.address.state }} {{ .Site.Data.global_data.address.zip }}</p>
             </div>
         </div>
         <div class="flex flex-wrap w-full lg:w-1/2 items-start mx-auto">

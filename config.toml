@@ -97,22 +97,6 @@ mediaType = "application/xml"
 path = "/"
 [outputs]
 home = ["HTML", "sitemapindex", "sitepages", "siteposts", "RSS"]
-[params.Contact_Numbers]
-Phone = "912-489-1377"
-Secondary_phone = "912-536-2958"
-[params.Logos]
-dark_logo = "/pageimg/example-logo.png"
-logo = "/v1575925944/AplusR/A_R_Logo_ounw3r.svg"
-mobile_menu_logo = "/v1575925944/AplusR/mobile-logo_bn2t9k.svg"
-[params.address]
-city = "Statesboro"
-mailStreet = "P.O. Box 1514"
-mailZip = "30459-1514"
-state = "GA"
-street = "106 Raybon Anderson Blvd"
-zip = 30458
-[params.email]
-email = "info@AR-US.com"
 [params.publishing_settings]
 site_in_production = true
 [params.social_links]
@@ -125,8 +109,5 @@ cloudinary_url = "https://res.cloudinary.com/pioneer-design/image/upload"
 google_analytics = ""
 [params.utility_images]
 thank_you_background = "/pageimg/thank-you-contact.jpg"
-[params.footer]
-footerLogo = "/v1575925944/AplusR/A_R.FullLogo_txyubw.svg"
-footerAboutText = "A+R Valve USA, LLC is the North American master distributor for A+R Armaturen based in Bad Salzuflen, Germany, a leading European manufacturer of high performance ball valves."
 [sitemap]
 filename = "sitepages.xml"
